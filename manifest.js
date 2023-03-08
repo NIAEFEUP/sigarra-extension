@@ -23,7 +23,11 @@ export const MANIFEST_CHROME = {
         {
         run_at: "document_start",
         matches: ["https://sigarra.up.pt/feup/*"],
-        css: ["css/simpler.css", "css/custom.css"],
+        css: [
+            "css/simpler.css",
+            "css/custom.css",
+            "css/icons.css"
+        ],
         },
         {
         run_at: "document_end",
@@ -37,7 +41,8 @@ export const MANIFEST_CHROME = {
             "css/main.css",
             "css/custom.css",
             "css/simpler.css",
-            "js/override-functions.js"
+            "js/override-functions.js",
+            "css/icons.css"
         ],
         matches: ["https://sigarra.up.pt/*"],
         },
@@ -69,10 +74,14 @@ export const MANIFEST_FIREFOX = {
         {
         run_at: "document_start",
         matches: ["https://sigarra.up.pt/feup/*"],
-        css: ["css/simpler.css", "css/custom.css"],
+        css: [
+            "css/simpler.css",
+            "css/custom.css",
+            "css/icons.css"
+        ],
         },
         {
-        run_at: "document_start",
+        run_at: "document_end",
         matches: ["https://sigarra.up.pt/feup/*"],
         js: ["dist/main.js"],
         },
@@ -81,7 +90,8 @@ export const MANIFEST_FIREFOX = {
         "css/main.css",
         "css/simpler.css",
         "css/custom.css",
-        "js/override-functions.js"
+        "js/override-functions.js",
+        "css/icons.css"
     ],
     browser_action: {
         default_icon: {
